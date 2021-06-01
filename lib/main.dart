@@ -1,3 +1,4 @@
+import 'package:crypto_app/theme.dart';
 import 'package:flutter/material.dart';
 
 import './screens/home.dart';
@@ -16,7 +17,13 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.orange,
+        // primarySwatch: primaryColor,
+        accentColor: thirdColor,
+        scaffoldBackgroundColor: scaffoldColor,
+        textTheme: TextTheme(
+          bodyText1: TextStyle(color: Colors.white),
+          bodyText2: TextStyle(color: Colors.white),
+        ),
       ),
       home: const HomeScreen(title: 'Flutter Demo Home Page'),
       routes: {

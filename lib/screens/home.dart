@@ -1,6 +1,8 @@
 import 'package:crypto_app/screens/login.dart';
 import 'package:flutter/material.dart';
 
+import '../theme.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key, required this.title}) : super(key: key);
   final String title;
@@ -21,6 +23,7 @@ class _MyHomePageState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: scaffoldColor,
       appBar: AppBar(
         title: Text(widget.title),
       ),
