@@ -1,6 +1,8 @@
 import 'package:crypto_app/theme.dart';
 import 'package:flutter/material.dart';
 
+import './components/login_form.dart';
+
 class LoginScreen extends StatelessWidget {
   static const routeName = "/login";
   @override
@@ -22,17 +24,7 @@ class LoginScreen extends StatelessWidget {
               color: Colors.white,
               width: MediaQuery.of(context).size.width * 0.5,
               height: MediaQuery.of(context).size.height * 0.5,
-              child: Column(
-                children: [
-                  TextField(
-                    decoration: InputDecoration(labelText: 'Login'),
-                  ),
-                  TextField(
-                    decoration: InputDecoration(labelText: 'Password'),
-                    obscureText: true,
-                  ),
-                ],
-              ),
+              child: LoginForm(),
             ),
           ],
         ),
